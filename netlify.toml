@@ -1,0 +1,3 @@
+# Netlify deployment settings (used at Milestone 7)
+[build]
+  publish = "."

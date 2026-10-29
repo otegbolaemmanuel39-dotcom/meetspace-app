@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MeetSpace: hang out in themed rooms, play games, and meet people who share your interests." />
+  <meta name="theme-color" content="#0f0a1f" />
+  <title>MeetSpace - Your World. Your People.</title>
+
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="logo">Meet<span>Space</span></a>
+
+      <button class="nav-toggle" id="navToggle"
+              aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+        &#9776;
+      </button>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#rooms">Rooms</a></li>
+          <li><a href="#games">Games</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="btn btn-ghost" data-soon="Log in">Log in</button>
+          <button class="btn btn-primary" data-soon="Sign up">Join free</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <span class="hero-badge"><span class="live-dot"></span>Rooms are live right now</span>
+        <h1>Your World.<br /><span class="gradient-text">Your People.</span></h1>
+        <p class="hero-text">
+          Drop into themed hangout rooms, play games together, and meet people
+          who love the same things you do.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary btn-lg" data-soon="Sign up">Start hanging out</button>
+          <a href="#features" class="btn btn-ghost btn-lg">See how it works</a>
+        </div>
+
+        <div class="hero-stats">
+          <div><strong>8</strong>themed rooms</div>
+          <div><strong>7+</strong>games to play</div>
+          <div><strong>100%</strong>your choice of who to talk to</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section" id="features">
+      <div class="container">
+        <h2 class="section-title">A place to do things together</h2>
+        <p class="section-subtitle">
+          MeetSpace is built around shared activities, not endless texting.
+        </p>
+
+        <div class="feature-grid">
+          <article class="card feature-card">
+            <div class="feature-icon" aria-hidden="true">🎧</div>
+            <h3>Hang out in rooms</h3>
+            <p>Pick a vibe, from Gaming Lounge to Study Room, and join people already there.</p>
+          </article>
+          <article class="card feature-card">
+            <div class="feature-icon" aria-hidden="true">🎮</div>
+            <h3>Play together</h3>
+            <p>Trivia, drawing games, and daily challenges to break the ice and win bragging rights.</p>
+          </article>
+          <article class="card feature-card">
+            <div class="feature-icon" aria-hidden="true">✨</div>
+            <h3>Find your people</h3>
+            <p>Discover friends and communities based on what you actually enjoy.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Room cards arrive in Milestone 1, Part B (id="rooms") -->
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 MeetSpace. Your World. Your People.</p>
+    </div>
+  </footer>
+
+  <!-- Small message box used by app.js -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

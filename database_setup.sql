@@ -1,0 +1,13 @@
+-- =====================================================
+-- MeetSpace - database_setup.sql
+-- Placeholder. At Milestone 3 we create the Supabase
+-- project, and this file will hold every table and
+-- Row Level Security policy, one step at a time.
+--
+-- Planned tables:
+--   profiles, interests, rooms, room_members,
+--   friendships, notifications, anonymous_messages,
+--   blocks, reports, games, game_scores
+--
+-- Rule: every table gets Row Level Security enabled.
+-- =====================================================
